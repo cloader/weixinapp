@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+<view  style="margin-top:10px ">成都公交卡查询</view>
+
+  <view class="itemView" style="margin-top:20px ">
+    <input type="text" maxlength="8" class="inputView" placeholder="请输入8位公交卡号" bindinput="cardinput" value="16114544"/>
+    <button class="btn" bindtap="bindSearch">查询</button>
+  </view>
+</view>

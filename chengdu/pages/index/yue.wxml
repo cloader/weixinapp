@@ -1,0 +1,13 @@
+
+<view class="container">
+    <view>
+        <text class="br">当月次数:{{data.timesBalance[0].remainTimes}}次</text>
+        <text class="br">钱包余额:{{data.remainMoney}}元</text>
+    </view>
+<view class="detail">
+<block  wx:for="{{data.timesBalance}}" wx:for-item="det" wx:key="*this">
+    <text class="br">{{det.month}}月:{{det.remainTimes}}次</text>
+  </block>
+<button bindtap="bindSearch" style="margin-top:50px">查询消费记录</button>
+</view>
+</view>

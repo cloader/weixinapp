@@ -1,0 +1,22 @@
+<!--pages/index/xiaofei.wxml-->
+<view>
+
+<view>
+     <text>时间</text>
+    <text>：</text>
+    <text>    路线</text>
+    <text>：</text>
+    <text>    余额</text>
+
+</view>
+<block  wx:for="{{data.listData}}" wx:for-item="det" wx:key="*this">
+<view style="display:block">
+    <text style="color:blue">{{det.addTime}}</text>
+    <text>:</text>
+    <text style="color:red">{{det.lineNum}}路</text>
+    <text>:</text>
+    <text style="color:green">{{det.remainValue}}<text wx:if="{{det.type=='1'}}">次</text> <text wx:else>元 </text> </text>
+</view>
+  </block>
+
+</view>
