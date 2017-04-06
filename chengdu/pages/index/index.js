@@ -7,12 +7,6 @@ Page({
     userInfo: {},
     no:"16114544"
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
   cardinput:function(e){
     this.setData({
       no:e.detail.value
@@ -32,21 +26,6 @@ Page({
         userInfo:userInfo
       })
     })
-
-    wx.request({
-      url: 'https://ccaiw.picp.net:5000/webman/index.cgi',
-      data: {cardno:"123"},
-      method: 'POST', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
-      // header: {}, // 设置请求的 header
-       header:{"Content-Type":"application/x-www-form-urlencoded"},
-      // dataType:"application/x-www-form-urlencoded",
-      success: function(res){
-        console.info(res)
-        if(res.statusCode==200&&res.data.status==101){
-          that.setData({data:res.data});
-        }
-      }
-    }) 
   },
   onShareAppMessage:function(){
      return {

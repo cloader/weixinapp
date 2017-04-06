@@ -11,7 +11,10 @@ Page({
       data: {cardno:options.no},
       method: 'POST', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
       // header: {}, // 设置请求的 header
-       header:{"X-Requested-With":"XMLHttpRequest","Content-Type":"application/x-www-form-urlencoded"},
+      //"X-Requested-With":"XMLHttpRequest",
+       header:{
+         "X-Requested-With":"XMLHttpRequest",
+         "Content-Type":"application/x-www-form-urlencoded"},
       // dataType:"application/x-www-form-urlencoded",
       success: function(res){
         console.info(res)

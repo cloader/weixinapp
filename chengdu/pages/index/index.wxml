@@ -1,13 +1,25 @@
 <!--index.wxml-->
-<view class="container">
+<view class="page">
   <view  bindtap="bindViewTap" class="userinfo">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
-<view  style="margin-top:10px ">成都公交卡查询</view>
-
-  <view class="itemView" style="margin-top:20px ">
-    <input type="text" maxlength="8" class="inputView" placeholder="请输入8位公交卡号" bindinput="cardinput" value="16114544"/>
-    <button class="btn" bindtap="bindSearch">查询</button>
+  <view class="page__hd">
+    <view  class="page__title">成都公交卡查询</view>
+    <view  class="page__desc">查询成都公交卡余额、次数和消费记录</view>
   </view>
+  
+  <view class="weui-cells__title">请输入8位公交卡号</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">公交卡号</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入8位公交卡号" bindinput="cardinput" value="16114544" />
+                </view>
+            </view>
+        </view>
 </view>
+<button class="weui-btn" type="primary" bindtap="bindSearch">查询</button>
+

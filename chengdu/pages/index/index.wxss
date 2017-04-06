@@ -15,26 +15,3 @@
 .userinfo-nickname {
   color: #aaa;
 }
-
-.usermotto {
-  margin-top: 200px;
-}
-
-.input-class{
-   border: 1;
-   border-color: red;
-}
-
-/*按钮样式*/
-.btn{
-
-}
-
-.inputView{
-    border:  1px solid deepskyblue;
-    border-radius: 40px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}

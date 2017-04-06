@@ -17,14 +17,17 @@ Page({
       method: 'POST', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
       // header: {}, // 设置请求的 header
       //"X-Requested-With":"XMLHttpRequest",
-       header:{"X-Requested-With":"XMLHttpRequest","Content-Type":"application/x-www-form-urlencoded"},
+       header:{
+         "X-Requested-With":"XMLHttpRequest",
+         "Content-Type":"application/x-www-form-urlencoded"},
       success: function(res){
-        console.info(res)
+        //console.info(res)
           that.setData({data:res.data});
       
       }
     }) 
 
+/*历史次数查询
       wx.request({
       url: 'https://hv5.basiapp.com/MyCard/GetTopUp',
       data: {cardno:this.data.no},
@@ -37,6 +40,7 @@ Page({
         }
       }
     }) 
+    **/
   },
  bindSearch:function(){
    wx.navigateTo({
