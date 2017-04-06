@@ -1,5 +1,5 @@
-## ΢��С����
-1.�ɶ���������ѯ
-![Ч��ͼ01](chengdu01.jpg)
-![Ч��ͼ02](chengdu02.jpg)
-![Ч��ͼ03](chengdu03.jpg)
+## 微信小程序
+1.成都公交卡查询
+![效果图01-w150](chengdu01.jpg)
+![效果图02](chengdu02.jpg)
+![效果图03](chengdu03.jpg)
