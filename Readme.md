@@ -1,6 +1,6 @@
 ## 微信小程序
 1.成都公交卡查询
-<img src="chengdu01.jpg" weight="100px"/>
+<img src="chengdu01.jpg" width="100px"/>
 ![效果图01-w150](chengdu01.jpg =100px)
 ![效果图02](chengdu02.jpg)
 ![效果图03](chengdu03.jpg)
