@@ -1,5 +1,5 @@
-## Î¢ÐÅÐ¡³ÌÐò
-1.³É¶¼¹«½»¿¨²éÑ¯
-![Ð§¹ûÍ¼01](chengdu01.png)
-![Ð§¹ûÍ¼02](chengdu02.png)
-![Ð§¹ûÍ¼03](chengdu03.png)
+## å¾®ä¿¡å°ç¨‹åº
+1.æˆéƒ½å…¬äº¤å¡æŸ¥è¯¢  
+<img src="chengdu01.jpg" width="200px"/>
+<img src="chengdu02.jpg" width="200px"/>
+<img src="chengdu03.jpg" width="200px"/>
