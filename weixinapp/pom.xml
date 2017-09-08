@@ -1,0 +1,106 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.ccaiw</groupId>
+	<artifactId>weixinapp</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>weixinapp Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<!-- 主要依赖库的版本定义 -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jdk.version>1.7</jdk.version>
+		<junit.version>4.11</junit.version>
+		<mysql.version>5.1.20</mysql.version>
+		<oracle.version>10.2.0.4.0</oracle.version>
+		<druid.version>1.0.12</druid.version>
+		<ehcache.version>2.6.9</ehcache.version>
+		<jetty.version>8.1.8</jetty.version>
+		<jfinal.version>3.0</jfinal.version>
+		<cglib.version>3.1</cglib.version>
+		<beetl.version>2.2.5</beetl.version>
+		<cos.version>26Dec2008</cos.version>
+		<fastjson.version>1.2.9</fastjson.version>
+		<commons-codec.version>1.7</commons-codec.version>
+		<log4j.version>1.2.16</log4j.version>
+		<slf4j.version>1.6.1</slf4j.version>
+		<jxl.version>2.6.12</jxl.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.jfinal</groupId>
+			<artifactId>jfinal</artifactId>
+			<version>${jfinal.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>${druid.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>${fastjson.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.jfinal</groupId>
+			<artifactId>jetty-server</artifactId>
+			<version>8.1.8</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz</artifactId>
+			<version>2.1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>com.xiaoleilu</groupId>
+			<artifactId>hutool-all</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>weixinapp</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

@@ -1,0 +1,4 @@
+/* pages/index/subri.wxss */
+.form-area{
+  margin-top: 10px;
+}
