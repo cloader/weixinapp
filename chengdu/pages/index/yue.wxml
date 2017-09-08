@@ -13,6 +13,19 @@
         </view>
         </view>
     <view>
-<button class="weui-btn" bindtap="bindSearch" type="primary" bindtap="bindSearch">查询消费记录</button>
+  <view>
+<button class="weui-btn" bindtap="bindSearch" type="primary">查询消费记录</button>
 </view>
+<view  class="form-area">
+<form bindsubmit="bindSubri" report-submit="true" formId ="subri-aaabbcc">
+  <button formType="submit" class="weui-btn" type="primary">
+    订阅余额(低于10元)提醒
+    </button>
+</form>
+</view>
+</view>
+<view class="page__hd">
+    <view  class="page__title">订阅说明</view>
+    <view  class="page__desc">由于微信小程序限制，余额通知只能在7日内有效，故如需继续启用余额通知功能，<span style="color:red">请在收到余额通知的消息后，点击进入小程序继续订阅。</span></view>
+  </view>
 </view>

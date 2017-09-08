@@ -1,13 +1,15 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/index/yue",
-    "pages/index/xiaofei"
+    "pages/index/xiaofei",
+"pages/index/subri"
+    
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "成都公交卡查询",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   }
 }

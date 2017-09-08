@@ -5,3 +5,6 @@
 .detail{
     margin-top: 50rpx;
 }
+.form-area{
+  margin-top: 10px;
+}
